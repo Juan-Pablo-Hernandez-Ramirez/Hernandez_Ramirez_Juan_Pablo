@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <title>Login Node.js MySql</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <!-- Fontawesome Link -->
+  </head>
+
+      <nav class = "navigation">
+        <div>
+          <h1 style = "margin-bottom: -50px; font-size: 25px">  </h1>
+
+          {{#if email}}
+            <a href = "/logout"> Logout </a>
+            <p>{{name}}</p>
+
+          {{else}}
+              <a href = "/login">
+                <button class = "btn"> Login </button>
+              </a>
+
+              <a href = "/register">
+                <button class = "btn"> Register </button>
+              </a>
+
+          {{/if}}
+
+        </div>
+      </nav>
+    {{{body}}}
+  </body>
+</html>

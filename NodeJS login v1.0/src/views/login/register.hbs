@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang = "en"> 
+
+
+<style>
+	html{
+		background-color: rgb(28, 44, 65);
+	}
+</style>
+
+
+<body> 
+	<form action = "" method = "post"> 
+		<div class = "registerForm">
+
+			<h1> ¡Te damos la bienvenida! </h1>
+
+			<h2> Apellido paterno </h2> 
+			<input type = "text" name = "apPaterno" placeholder =  " Ingresa tu primer apellido">
+
+			<h2> Apellido materno </h2> 
+			<input type = "text" name = "apMaterno" placeholder =  " Ingresa tu segundo apellido"> 
+
+			<h2> Ingresa tu(s) nombre(s) </h2> 
+			<input type = "text" name = "nombre" placeholder =  " Ingresa tu nombre"> 
+
+			<h2> e-mail </h2> 
+			<input type = "email" name = "email" placeholder = " nombre@ejemplo.com"> 
+
+			<h2> Fecha de nacimiento </h2>
+			<input type = "date"> 
+
+			<h2> Pais </h2>
+
+			<h2> Estado </h2> 
+
+			<h2> Municipio </h2>
+			<select name="" id="">
+				
+			<option> Aguascalientes </option>
+			<option> Asientos </option>
+			<option> Calvillo </option>
+			<option> Cosío </option>
+			<option> Jesús María </option>
+			<option> Pabellón de Arteaga </option>
+			<option> Rincón de Romos </option>
+			<option> San José de Gracia </option>
+			<option> Tepezalá </option>
+			<option> El Llano </option>
+			<option> San Francisco de los Romo </option>
+			</select>
+
+			<h2> Numero de telefono </h2> 
+			<input type = "tel" placeholder = " 4490000000"> 
+
+			<h2> Contraseña </h2> 
+			<input type = "password" name = "password" placeholder = " ●●●●●●●●●●"> 
+
+			<button  type = "submit" class = "btn" id = "registerButton" style = "width: 130px;">
+				Registrarme
+			</button>
+
+
+
+            {{#if error}}
+                <p class="text-red-500 font-bold text-lg my-3 ">{{error}}</p>
+            {{/if}}
+
+
+
+			<h3>
+				<a href = "login.html" class = "loginRedirectionButton">
+					¿Ya tienes cuenta? Haz clic aqui
+				</a>
+			</h3>
+
+
+		</div> 
+
+	</form> 
+
+</body> 
+
+</html> 
